@@ -1,0 +1,7 @@
+<div id="customer" *ngFor='let customer of customers' class="card">
+  <div class="card-content" [routerLink]="['/customer', customer.id]">
+    <div class="content">
+      <span class="card-title"> {{customer.id}} </span>
+    </div>
+  </div>
+</div>
